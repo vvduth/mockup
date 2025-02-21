@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dichol</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous" />
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Helvetica', sans-serif;
+      font-weight: bold;
+      color: #2e7d32; /* Earthy green */
+    }
+
+    p, a, li {
+      font-family: 'Georgia', serif;
+      font-weight: normal;
+      color: #5d4037; /* Earthy brown */
+    }
+
+    .btn-primary {
+      background-color: #388e3c; /* Earthy green */
+      border-color: #388e3c;
+    }
+
+    .btn-outline-secondary {
+      color: #5d4037; /* Earthy brown */
+      border-color: #5d4037;
+    }
+
+    .bg-body-tertiary {
+      background-color: #e0e0e0; /* Neutral tone */
+    }
+
+    .text-body-emphasis {
+      color: #2e7d32; /* Earthy green */
+    }
+
+    .text-body-secondary {
+      color: #5d4037; /* Earthy brown */
+    }
+
+    .bg-body-secondary {
+      background-color: #e0e0e0; /* Neutral tone */
+    }
+
+    .border-dashed {
+      border-style: dashed;
+    }
+
+    .rounded-5 {
+      border-radius: 0.5rem;
+    }
+
+    .rounded-3 {
+      border-radius: 0.3rem;
+    }
+
+    .icon-square {
+      width: 3rem;
+      height: 3rem;
+      border-radius: .75rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/logo.jpg" class="rounded-5 border" alt="app logo" height="30" />
+        Dichol</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#features" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#marketing">How we work?</a></li>
+              <li><a class="dropdown-item" href="https://dicholl.vercel.app/">Our online market place</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
+          Transform Your Second-Hand Business with Dichol
+        </h1>
+        <p class="lead">
+          Join a growing platform dedicated to sustainability, innovation, and growth.
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">
+            Get started
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+            Request a Demo
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img class="rounded-lg-3 rounded-3" src="/header-clothing.jpg" alt="" width="720" />
+      </div>
+    </div>
+  </div>
+
+  <!-- About us -->
+  <div id="about"class="container my-5">
+    <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+      <button type="button"
+        class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill"
+        aria-label="Close"></button>
+      <svg class="bi mt-5 mb-3" width="48" height="48">
+        <use xlink:href="#check2-circle"></use>
+      </svg>
+      <h1 class="text-body-emphasis">About Dichol</h1>
+      <p class="col-lg-6 mx-auto mb-4">
+        Dichol is a comprehensive e-commerce platform designed to help second-hand businesses
+        expand their reach and grow sustainably. By joining our marketplace, your store gains access to
+        innovative tools and services tailored to your needs, from logistics support to powerful marketing
+        strategies.
+
+      </p>
+      <button class="btn btn-primary px-5 mb-5" type="button">
+        Learn more about our service
+      </button>
+    </div>
+  </div>
+
+  <!-- Features (why choose us )-->
+  <div id="features" class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Why choose Dichol?</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <img src="./briefcase.svg" alt="suitcase" height="30" />
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Increased Visibility</h3>
+          <p>Get discovered by eco-conscious consumers actively seeking sustainable
+            options.</p>
+          <a href="#" class="btn btn-primary">
+            Primary button
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <img src="./bus-front.svg" alt="suitcase" height="30" />
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Seamless Integration</h3>
+          <p>Our platform is designed to be intuitive, making it easy for you to manage
+            your store.</p>
+          <a href="#" class="btn btn-primary">
+            Primary button
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div
+          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <img src="./chat-square-heart.svg" alt="suitcase" height="30" />
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Tailored Marketing Support</h3>
+          <p>Benefit from personalized marketing strategies to enhance your
+            brand’s online presence,</p>
+          <a href="#" class="btn btn-primary">
+            Primary button
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How it works -->
+
+  <div id="marketing" class="container marketing my-5">
+    <h1>Simple, Effective, Sustainable</h1>
+    <h2>How Dichol works in 3 easy steps:</h2>
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h3 class="featurette-heading fw-normal lh-1">Sign Up <span class="text-body-secondary"></h3>
+        <p class="lead">Create an account and join our platform.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+           xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="50%" fill="var(--bs-secondary-bg)"></rect><text x="25%" y="25%"
+            fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
+        </svg> -->
+        <img src="./sign-up.jpg"
+        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3"
+        alt="sign up" height="500" width="500" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">
+          List Your Products
+        </h2>
+        <p class="lead">Add your second-hand items to the marketplace.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="./list-products.jpg"
+        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3"
+        alt="sign up" height="500" width="500" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Grow Your Business <span
+            class="text-body-secondary">Checkmate.</span></h2>
+        <p class="lead">Reach a larger audience and track your performance with built-in
+          analytics.
+          </p>
+      </div>
+      <div class="col-md-5">
+        <img src="./bussiness.jpg"
+        class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3"
+        alt="sign up" height="500" width="500" />
+      </div>
+    </div>
+    <a href="#" class="btn btn-primary btn-lg mt-5 px-4 gap-3">
+      Join Dichol Today
+    </a>
+
+  </div>
+
+  <!-- Footer -->
+  <div id="contact" class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Contact info</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">mmigayi@gmail.com</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Linkedin </a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div> -->
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2025 Company, Dichol. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

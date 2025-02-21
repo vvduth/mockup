@@ -1,0 +1,91 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    color: #2e7d32; /* Earthy green */
+  }
+
+  p, a, li {
+    font-family: 'Georgia', serif;
+    font-weight: normal;
+    color: #5d4037; /* Earthy brown */
+  }
+
+  .btn-primary {
+    background-color: #388e3c; /* Earthy green */
+    border-color: #388e3c;
+  }
+
+  .btn-outline-secondary {
+    color: #5d4037; /* Earthy brown */
+    border-color: #5d4037;
+  }
+
+  .bg-body-tertiary {
+    background-color: #e0e0e0; /* Neutral tone */
+  }
+
+  .text-body-emphasis {
+    color: #2e7d32; /* Earthy green */
+  }
+
+  .text-body-secondary {
+    color: #5d4037; /* Earthy brown */
+  }
+
+  .bg-body-secondary {
+    background-color: #e0e0e0; /* Neutral tone */
+  }
+
+  .border-dashed {
+    border-style: dashed;
+  }
+
+  .rounded-5 {
+    border-radius: 0.5rem;
+  }
+
+  .rounded-3 {
+    border-radius: 0.3rem;
+  }
+
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+  }
+
+  /* Add animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .slide-in {
+    animation: slideIn 1.5s ease-in-out;
+  }

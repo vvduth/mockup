@@ -64,15 +64,26 @@
           Transform Your Second-Hand Business with Dichol
         </h1>
         <p class="lead">
-          Join a growing platform dedicated to sustainability, innovation, and growth.
+          Join our platform to grow your online sales and reach more sustainable shoppers.
         </p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">
-            Get started
-          </button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-            Request a Demo
-          </button>
+
+        <!-- Waitlist form -->
+        <div class="card border-0 bg-light p-3 mb-4">
+          <div class="card-body">
+            <h5 class="card-title mb-3">Coming Spring 2025 - Join the waitlist</h5>
+            <form class="row g-3">
+              <div class="col-md-8">
+                <input type="email" class="form-control" id="waitlistEmail" placeholder="Enter your email address"
+                  required>
+              </div>
+              <div class="col-md-4">
+                <button type="submit" class="btn btn-primary w-100">Join the waitlist</button>
+              </div>
+              <div class="col-12">
+                <small class="text-muted">Be the first to know when we launch. No spam, we promise!</small>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
       <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
@@ -81,77 +92,133 @@
     </div>
   </div>
 
+ 
   <!-- About us -->
-  <div id="about" class="container my-5 fade-in">
-    <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
-      <button type="button"
-        class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill"
-        aria-label="Close"></button>
-      <svg class="bi mt-5 mb-3" width="48" height="48">
-        <use xlink:href="#check2-circle"></use>
-      </svg>
-      <h1 class="text-body-emphasis">About Dichol</h1>
-      <p class="col-lg-6 mx-auto mb-4">
-        Dichol is a comprehensive e-commerce platform designed to help second-hand businesses
-        expand their reach and grow sustainably. By joining our marketplace, your store gains access to
-        innovative tools and services tailored to your needs, from logistics support to powerful marketing
-        strategies.
-
-      </p>
-      <button class="btn btn-primary px-5 mb-5" type="button">
-        Learn more about our service
-      </button>
-    </div>
-  </div>
-
-  <!-- Features (why choose us )-->
-  <div id="features" class="container px-4 py-5 slide-in">
-    <h2 class="pb-2 border-bottom">Why choose Dichol?</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div class="col d-flex align-items-start">
-        <div
-          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-          <img src="./briefcase.svg" alt="suitcase" height="30" />
-        </div>
-        <div>
-          <h3 class="fs-2 text-body-emphasis">Increased Visibility</h3>
-          <p>Get discovered by eco-conscious consumers actively seeking sustainable
-            options.</p>
-          <a href="#" class="btn btn-primary">
-            Primary button
-          </a>
-        </div>
+  <div id="about" class="container my-5">
+    <div class="position-relative p-5 text-center bg-body border rounded-5 shadow-lg overflow-hidden">
+      <!-- Background pattern -->
+      <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10"
+        style="background: radial-gradient(circle, rgba(56, 142, 60, 0.3) 10%, transparent 10.5%), radial-gradient(circle, rgba(56, 142, 60, 0.3) 10%, transparent 10.5%); background-size: 30px 30px; background-position: 0 0, 15px 15px; z-index: -1;">
       </div>
-      <div class="col d-flex align-items-start">
-        <div
-          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-          <img src="./bus-front.svg" alt="suitcase" height="30" />
-        </div>
-        <div>
-          <h3 class="fs-2 text-body-emphasis">Seamless Integration</h3>
-          <p>Our platform is designed to be intuitive, making it easy for you to manage
-            your store.</p>
-          <a href="#" class="btn btn-primary">
-            Primary button
-          </a>
-        </div>
+
+      <!-- Animated elements -->
+      <div class="position-absolute top-0 end-0 p-3 m-3">
+        <button type="button" class="btn-close bg-secondary bg-opacity-10 rounded-pill" aria-label="Close"></button>
       </div>
-      <div class="col d-flex align-items-start">
-        <div
-          class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-          <img src="./chat-square-heart.svg" alt="suitcase" height="30" />
-        </div>
-        <div>
-          <h3 class="fs-2 text-body-emphasis">Tailored Marketing Support</h3>
-          <p>Benefit from personalized marketing strategies to enhance your
-            brand’s online presence,</p>
-          <a href="#" class="btn btn-primary">
-            Primary button
-          </a>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Icon with animation -->
+          <div class="mb-4 position-relative">
+            <div class="rounded-circle bg-light p-3 d-inline-block mb-3 shadow-sm"
+              style="animation: pulse 2s infinite;">
+              <img src="./logo.jpg" class="rounded-circle" alt="Dichol logo" height="60" width="60" />
+            </div>
+          </div>
+
+          <h1 class="text-body-emphasis mb-4 fw-bold" style="animation: fadeInUp 1s ease-out;">About Dichol</h1>
+
+          <p class="mx-auto mb-4 lead" style="animation: fadeInUp 1.2s ease-out;">
+            Dichol is a comprehensive e-commerce platform designed to help second-hand businesses
+            expand their reach and grow sustainably. By joining our marketplace, your store gains access to
+            innovative tools and services tailored to your needs, from logistics support to powerful marketing
+            strategies.
+          </p>
+
+          <!-- Stats with count-up animation effect -->
+          
+
+          <button class="btn btn-primary px-5 py-2 shadow-sm" type="button" style="animation: fadeInUp 1.6s ease-out;">
+            Learn more about our service
+          </button>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Features (why choose us) -->
+<div id="features" class="container px-4 py-5 slide-in">
+  <div class="row mb-4">
+    <div class="col-lg-6">
+      <h2 class="display-5 fw-bold text-body-emphasis">Why choose Dichol?</h2>
+      <div class="border-bottom border-3 border-primary mt-2 mb-4" style="width: 80px;"></div>
+      <p class="lead">We help second-hand businesses thrive in the digital marketplace with innovative solutions tailored to your needs.</p>
+    </div>
+  </div>
+  
+  <div class="row g-4 py-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+    <!-- Feature 1 -->
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm hover-card">
+        <div class="card-body p-4">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary fs-2 mb-3 p-3 rounded-3">
+            <img src="./briefcase.svg" alt="suitcase" height="30" />
+          </div>
+          <h3 class="fs-2 text-body-emphasis mb-3">Increased Visibility</h3>
+          <p class="text-body-secondary mb-0">Get discovered by eco-conscious consumers actively seeking sustainable
+            options for their shopping needs.</p>
+        </div>
+        <div class="card-footer border-0 bg-transparent text-end">
+          <a href="#" class="text-decoration-none text-primary d-inline-flex align-items-center">
+            Learn more <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Feature 2 -->
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm hover-card">
+        <div class="card-body p-4">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary fs-2 mb-3 p-3 rounded-3">
+            <img src="./bus-front.svg" alt="suitcase" height="30" />
+          </div>
+          <h3 class="fs-2 text-body-emphasis mb-3">Seamless Integration</h3>
+          <p class="text-body-secondary mb-0">Our platform is designed to be intuitive, making it easy for you to manage
+            your store and inventory without technical complexity.</p>
+        </div>
+        <div class="card-footer border-0 bg-transparent text-end">
+          <a href="#" class="text-decoration-none text-primary d-inline-flex align-items-center">
+            Learn more <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Feature 3 -->
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm hover-card">
+        <div class="card-body p-4">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary fs-2 mb-3 p-3 rounded-3">
+            <img src="./chat-square-heart.svg" alt="suitcase" height="30" />
+          </div>
+          <h3 class="fs-2 text-body-emphasis mb-3">Tailored Marketing Support</h3>
+          <p class="text-body-secondary mb-0">Benefit from personalized marketing strategies to enhance your
+            brand's online presence and reach your target audience effectively.</p>
+        </div>
+        <div class="card-footer border-0 bg-transparent text-end">
+          <a href="#" class="text-decoration-none text-primary d-inline-flex align-items-center">
+            Learn more <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Additional Feature Highlight -->
+  <div class="row mt-5 bg-light rounded-4 shadow-sm overflow-hidden">
+    <div class="col-lg-6 p-0">
+      <img src="./header-clothing.jpg" alt="Feature highlight" class="img-fluid h-100" style="object-fit: cover;" />
+    </div>
+    <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+      <h3 class="fs-1 mb-4">Sustainable Growth for Your Business</h3>
+      <p class="mb-4">Join a community of like-minded entrepreneurs committed to promoting sustainability through second-hand commerce. Our platform helps you scale while maintaining your environmental values.</p>
+      <div>
+        <a href="#" class="btn btn-primary px-4 py-2">Explore our ecosystem</a>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- How it works -->
 
@@ -167,13 +234,6 @@
         </p>
       </div>
       <div class="col-md-5">
-        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-           xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-          preserveAspectRatio="xMidYMid slice" focusable="false">
-          <title>Placeholder</title>
-          <rect width="100%" height="50%" fill="var(--bs-secondary-bg)"></rect><text x="25%" y="25%"
-            fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-        </svg> -->
         <img src="./sign-up.jpg"
           class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" alt="sign up"
           height="500" width="500" />
@@ -199,7 +259,7 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">Grow Your Business <span
-            class="text-body-secondary">Checkmate.</span></h2>
+            class="text-body-secondary"></span></h2>
         <p class="lead">Reach a larger audience and track your performance with built-in
           analytics.
         </p>
@@ -217,74 +277,91 @@
   </div>
 
   <!-- Footer -->
-  <div id="contact" class="container fade-in">
-    <footer class="py-5">
+  <div id="contact" class="container-fluid bg-light py-5 fade-in">
+    <footer class="container">
       <div class="row">
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
+        <div class="col-lg-4 mb-4">
+          <div class="d-flex align-items-center mb-3">
+            <img src="./logo.jpg" class="rounded-5 border me-2" alt="app logo" height="30" />
+            <h4 class="mb-0">Dichol</h4>
+          </div>
+          <p class="mb-4">Transform your second-hand business with our innovative platform dedicated to sustainability
+            and growth.</p>
+          <div class="d-flex gap-3 mb-4">
+            <a href="#" class="text-body-secondary fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-body-secondary fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-body-secondary fs-5"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-body-secondary fs-5"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2 mb-4">
+          <h5 class="mb-3">Navigation</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#about" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2"><a href="#features" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#marketing" class="nav-link p-0 text-body-secondary">How We Work</a></li>
+            <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-body-secondary">Contact</a></li>
           </ul>
         </div>
 
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Contact info</h5>
+        <div class="col-6 col-lg-2 mb-4">
+          <h5 class="mb-3">Contact</h5>
           <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"></a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">mmigayi@gmail.com</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Linkedin </a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2 d-flex align-items-start">
+              <i class="bi bi-envelope me-2 text-body-secondary"></i>
+              <a href="mailto:mmigayi@gmail.com" class="nav-link p-0 text-body-secondary">mmigayi@gmail.com</a>
+            </li>
+            <li class="nav-item mb-2 d-flex align-items-start">
+              <i class="bi bi-telephone me-2 text-body-secondary"></i>
+              <a href="tel:+1234567890" class="nav-link p-0 text-body-secondary">+1 (234) 567-890</a>
+            </li>
+            <li class="nav-item mb-2 d-flex align-items-start">
+              <i class="bi bi-geo-alt me-2 text-body-secondary"></i>
+              <span class="text-body-secondary">123 Sustainability St, Green City</span>
+            </li>
           </ul>
         </div>
 
-        <!-- <div class="col-6 col-md-2 mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div> -->
-
-        <div class="col-md-5 offset-md-1 mb-3">
-          <form>
-            <h5>Subscribe to our newsletter</h5>
-            <p>Monthly digest of what's new and exciting from us.</p>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-              <button class="btn btn-primary" type="button">Subscribe</button>
+        <div class="col-lg-4 mb-3">
+          <h5 class="mb-3">Get in touch</h5>
+          <form class="card border-0 shadow-sm">
+            <div class="card-body">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email address" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="3" placeholder="Your message" required></textarea>
+              </div>
+              <button class="btn btn-primary w-100" type="submit">Send Message</button>
             </div>
           </form>
         </div>
       </div>
 
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-        <p>© 2025 Company, Dichol. All rights reserved.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#twitter"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#facebook"></use>
-              </svg></a></li>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 border-top">
+        <p class="mb-0">© 2025 Dichol. All rights reserved.</p>
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item"><a href="#" class="text-body-secondary text-decoration-none">Privacy Policy</a>
+          </li>
+          <li class="list-inline-item">•</li>
+          <li class="list-inline-item"><a href="#" class="text-body-secondary text-decoration-none">Terms of Service</a>
+          </li>
         </ul>
       </div>
     </footer>
   </div>
+
+  <!-- Add Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>

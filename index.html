@@ -57,40 +57,82 @@
   </nav>
 
   <!-- Hero -->
-  <div class="container my-5 slide-in">
-    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
-          Transform Your Second-Hand Business with Dichol
-        </h1>
-        <p class="lead">
-          Join our platform to grow your online sales and reach more sustainable shoppers.
-        </p>
+  <!-- Hero Section -->
+<div class="container my-5">
+  <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+    <!-- Text Content - Restructured for better responsiveness -->
+    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-4">
+        Transform Your Second-Hand Business with Dichol
+      </h1>
+      <p class="lead mb-4">
+        Join our platform to grow your online sales and reach more sustainable shoppers.
+      </p>
 
-        <!-- Waitlist form -->
-        <div class="card border-0 bg-light p-3 mb-4">
-          <div class="card-body">
-            <h5 class="card-title mb-3">Coming Spring 2025 - Join the waitlist</h5>
-            <form class="row g-3">
-              <div class="col-md-8">
-                <input type="email" class="form-control" id="waitlistEmail" placeholder="Enter your email address"
-                  required>
+      <!-- Waitlist form - Improved for mobile -->
+      <div class="card border-0 bg-light p-3 mb-4">
+        <div class="card-body">
+          <h5 class="card-title mb-3">Coming Spring 2025 - Join the waitlist</h5>
+          <form>
+            <!-- Responsive form layout -->
+            <div class="row g-3">
+              <div class="col-12 col-sm-8">
+                <input type="email" class="form-control form-control-lg" id="waitlistEmail" 
+                       placeholder="Enter your email address" required>
               </div>
-              <div class="col-md-4">
-                <button type="submit" class="btn btn-primary w-100">Join the waitlist</button>
+              <div class="col-12 col-sm-4">
+                <button type="submit" class="btn btn-primary btn-lg w-100">Join the waitlist</button>
               </div>
               <div class="col-12">
                 <small class="text-muted">Be the first to know when we launch. No spam, we promise!</small>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-        <img class="rounded-lg-3 rounded-3" src="./header-clothing.jpg" alt="hero pic" width="720" />
+
+      <!-- Mobile-visible social proof -->
+      <div class="d-md-none mt-4">
+        <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+          <span class="badge bg-success rounded-pill px-3 py-2">Eco-Friendly</span>
+          <span class="badge bg-success rounded-pill px-3 py-2">Sustainable</span>
+          <span class="badge bg-success rounded-pill px-3 py-2">Circular Economy</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Container - With responsive adjustments -->
+    <div class="col-lg-5 p-0 overflow-hidden shadow-lg position-relative d-flex justify-content-center">
+      <!-- Mobile-friendly responsive image -->
+      <img class="rounded-lg-3 img-fluid d-block mx-lg-auto" 
+           src="./header-clothing.jpg" 
+           alt="Sustainable fashion items" 
+           style="width: 100%; height: 100%; object-fit: cover; max-height: 500px;" />
+      
+      <!-- Desktop-only social proof overlay -->
+      <div class="position-absolute bottom-0 start-0 w-100 p-3 bg-dark bg-opacity-50 text-white d-none d-lg-block">
+        <div class="d-flex justify-content-between align-items-center">
+          <!-- <div>
+            <span class="fw-bold">200+ </span>
+            <span>Second-hand stores</span>
+          </div>
+          <div>
+            <span class="fw-bold">15K+ </span>
+            <span>Sustainable shoppers</span>
+          </div> -->
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- Mobile-friendly CTA buttons below the hero on small screens -->
+  <div class="d-md-none text-center mt-4">
+    <div class="d-grid gap-2">
+      <a href="#features" class="btn btn-primary">See how it works</a>
+      <a href="#contact" class="btn btn-outline-secondary">Contact us</a>
+    </div>
+  </div>
+</div>
 
  
   <!-- About us -->
@@ -222,58 +264,109 @@
 
   <!-- How it works -->
 
-  <div id="marketing" class="container marketing my-5 fade-in">
-    <h1>Simple, Effective, Sustainable</h1>
-    <h2>How Dichol works in 3 easy steps:</h2>
-
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h3 class="featurette-heading fw-normal lh-1">Sign Up <span class="text-body-secondary"></h3>
-        <p class="lead">Create an account and join our platform.
-        </p>
+  <div id="marketing" class="container my-5 py-5">
+    <div class="text-center mb-5">
+      <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill mb-3">Our Process</span>
+      <h2 class="display-4 fw-bold">Simple, Effective, Sustainable</h2>
+      <p class="lead text-muted mx-auto" style="max-width: 600px;">Experience the seamless journey of transforming your second-hand fashion business with Dichol in three simple steps.</p>
+    </div>
+  
+    <div class="row g-5 mt-4">
+      <!-- Step 1 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 hover-card">
+          <div class="position-relative">
+            <img src="./sign-up.jpg" class="card-img-top" alt="Sign up process" style="height: 250px; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-3">
+              <span class="badge bg-primary rounded-circle p-3 fw-bold">1</span>
+            </div>
+          </div>
+          <div class="card-body p-4">
+            <h3 class="card-title fw-bold mb-3">Sign Up</h3>
+            <p class="card-text">Create your Dichol account in minutes and set up your brand profile with your unique story and sustainable vision.</p>
+            <a href="#" class="btn btn-outline-primary mt-3">Get Started <i class="bi bi-arrow-right ms-2"></i></a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-5">
-        <img src="./sign-up.jpg"
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" alt="sign up"
-          height="500" width="500" />
+      
+      <!-- Step 2 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 hover-card">
+          <div class="position-relative">
+            <img src="./list-products.jpg" class="card-img-top" alt="List products" style="height: 250px; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-3">
+              <span class="badge bg-primary rounded-circle p-3 fw-bold">2</span>
+            </div>
+          </div>
+          <div class="card-body p-4">
+            <h3 class="card-title fw-bold mb-3">List Your Products</h3>
+            <p class="card-text">Showcase your curated second-hand fashion pieces with our intuitive listing tools designed for maximum visual impact.</p>
+            <a href="#" class="btn btn-outline-primary mt-3">Learn More <i class="bi bi-arrow-right ms-2"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Step 3 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100 hover-card">
+          <div class="position-relative">
+            <img src="./bussiness.jpg" class="card-img-top" alt="Grow your business" style="height: 250px; object-fit: cover;">
+            <div class="position-absolute top-0 start-0 p-3">
+              <span class="badge bg-primary rounded-circle p-3 fw-bold">3</span>
+            </div>
+          </div>
+          <div class="card-body p-4">
+            <h3 class="card-title fw-bold mb-3">Grow Your Business</h3>
+            <p class="card-text">Connect with eco-conscious fashion lovers and track your performance with our advanced analytics dashboard.</p>
+            <a href="#" class="btn btn-outline-primary mt-3">Explore Features <i class="bi bi-arrow-right ms-2"></i></a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">
-          List Your Products
-        </h2>
-        <p class="lead">Add your second-hand items to the marketplace.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="./list-products.jpg"
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" alt="sign up"
-          height="500" width="500" />
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">Grow Your Business <span
-            class="text-body-secondary"></span></h2>
-        <p class="lead">Reach a larger audience and track your performance with built-in
-          analytics.
-        </p>
-      </div>
-      <div class="col-md-5">
-        <img src="./bussiness.jpg"
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" alt="sign up"
-          height="500" width="500" />
+    
+    <!-- Fashion brand testimonial -->
+    <div class="row mt-5 pt-5">
+      <div class="col-12">
+        <div class="card border-0 bg-light shadow-sm">
+          <div class="card-body p-4 p-md-5">
+            <div class="row align-items-center">
+              <div class="col-md-8">
+                <p class="lead fst-italic mb-4">"Customer testimonial goes here."</p>
+                <div class="d-flex align-items-center">
+                  <img src="./logo.jpg" class="rounded-circle me-3" width="60" height="60" alt="Testimonial">
+                  <div>
+                    <h5 class="mb-1">Sarah Johnson</h5>
+                    <p class="text-muted mb-0">Founder, Vintage Revive</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 text-md-end mt-4 mt-md-0">
+                <a href="#" class="btn btn-primary btn-lg px-4 py-3 rounded-pill">Join Dichol Today</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <a href="#" class="btn btn-primary btn-lg mt-5 px-4 gap-3">
-      Join Dichol Today
-    </a>
-
+  
+    <!-- Fashion trend element -->
+    <div class="row mt-5 pt-3">
+      <div class="col-12">
+        <div class="position-relative rounded-4 overflow-hidden" style="background: linear-gradient(135deg, #f0f4c3, #a5d6a7, #81c784);">
+          <div class="position-absolute top-0 end-0 h-100 d-none d-lg-block" style="width: 40%; background: url('./header-clothing.jpg') center/cover; opacity: 0.8;"></div>
+          <div class="row">
+            <div class="col-lg-7 p-5 text-white">
+              <h3 class="display-6 fw-bold mb-4">Sustainable Fashion Is The Future</h3>
+              <p class="lead mb-4">By 2030, the second-hand fashion market is projected to reach $84 billion, twice the size of fast fashion. Position your brand at the forefront of this revolution with Dichol.</p>
+              <div class="d-flex gap-3 mt-4">
+                <a href="#" class="btn btn-light">Get Started</a>
+                <a href="#" class="btn btn-outline-light">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
   </div>
 
   <!-- Footer -->
